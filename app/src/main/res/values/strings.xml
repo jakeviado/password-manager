@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Tick</string>
+    <string name="logo_string">tick</string>
+    <string name="name">Lorem Ipsum</string>
+    <string name="username">lorem_ipsum</string>
+    <string name="log_in_button_text">LOG IN</string>
+    <string name="register_button_text">REGISTER</string>
+    <string name="landing_photo_description">Background Image</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/authpage_nav"
+    app:startDestination="@id/landingPage">
+
+    <fragment
+        android:id="@+id/landingPage"
+        android:name="com.tick.secure.ui.fragments.LandingPage"
+        android:label="fragment_landing_page"
+        tools:layout="@layout/fragment_landing_page" >
+        <action
+            android:id="@+id/action_landingPage_to_login_page"
+            app:destination="@id/login_page"
+            app:enterAnim="@anim/anim_left" />
+        <action
+            android:id="@+id/action_landingPage_to_registration_page"
+            app:destination="@id/registration_page"
+            app:enterAnim="@anim/anim_left" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/login_page"
+        android:name="com.tick.secure.ui.fragments.LoginPage"
+        android:label="fragment_login_page"
+        tools:layout="@layout/fragment_login_page" >
+        <action
+            android:id="@+id/action_login_page_to_homePage"
+            app:destination="@id/homePage"
+            app:enterAnim="@anim/anim_left" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registration_page"
+        android:name="com.tick.secure.ui.fragments.RegistrationPage"
+        android:label="fragment_registration_page"
+        tools:layout="@layout/fragment_registration_page" >
+        <action
+            android:id="@+id/action_registration_page_to_login_page"
+            app:destination="@id/login_page"
+            app:enterAnim="@anim/anim_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/homePage"
+        android:name="com.tick.secure.ui.fragments.HomePage"
+        android:label="fragment_home_page"
+        tools:layout="@layout/home_page" />
+</navigation>

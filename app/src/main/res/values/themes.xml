@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Color definitions inspired by the marble texture -->
+    <color name="marble_white">#F5F5F5</color>
+    <color name="marble_light_gray">#E0E0E0</color>
+    <color name="marble_medium_gray">#BDBDBD</color>
+    <color name="marble_dark_gray">#757575</color>
+    <color name="marble_accent">#607D8B</color>
+
+    <style name="Theme.Tick" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary colors -->
+        <item name="colorPrimary">@color/marble_white</item>
+        <item name="colorPrimaryDark">@color/marble_light_gray</item>
+        <item name="colorAccent">@color/marble_accent</item>
+
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/marble_dark_gray</item>
+        <item name="android:textColorSecondary">@color/marble_medium_gray</item>
+
+        <!-- Window background -->
+        <item name="android:windowBackground">@color/marble_white</item>
+
+        <!-- Button styles -->
+        <item name="buttonStyle">@style/Widget.AppCompat.Button.Colored</item>
+        <item name="colorButtonNormal">@color/marble_accent</item>
+
+        <!-- EditText styles -->
+        <item name="editTextColor">@color/marble_dark_gray</item>
+    </style>
+</resources>
